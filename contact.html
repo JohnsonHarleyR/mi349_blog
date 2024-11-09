@@ -13,39 +13,43 @@
 
 <body>
     <header>
-        <h1>Code Queens</h1>
-        <p>It's not just for boys!</p>
+        <div id="title-area">
+            <h1>Code Queens</h1>
+            <p>It's not just for boys!</p>
+        </div>
         <nav>
             <ul>
                 <li><a class="nav-link" href="/index.html">Home</a></li>
                 <li><a class="nav-link" href="/about.html">About</a></li>
-                <li><a class="nav-link" href="/contact.html">Contact</a></li>
+                <li><a id="current-page" class="nav-link" href="/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Contact Me</h2>
-        <form name="contact" method="post">
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name">
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email">
-            <br>
-            <label for="reason">Reason to contact:</label>
-            <select name="reason" id="reason">
-                <option value="hello">Just saying hello!</option>
-                <option value="feedback">Site feedback</option>
-                <option value="collaboration">I want to collabsorate!</option>
-                <option value="hire">I want to hire you!</option>
-                <option value="other">Something else</option>
-            </select>
-            <br>
-            <label for="message">Message:</label>
-            <textarea name="message" id="message" rows="8" cols="40">Your message here...</textarea>
-            <br>
-            <button class="submit">Submit</button>
-        </form>
-    </section>
+    <main>
+        <section>
+            <h2>Contact Me</h2>
+            <form name="contact" method="post">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email">
+                <br>
+                <label for="reason">Reason to contact:</label>
+                <select name="reason" id="reason">
+                    <option value="hello">Just saying hello!</option>
+                    <option value="feedback">Site feedback</option>
+                    <option value="collaboration">I want to collabsorate!</option>
+                    <option value="hire">I want to hire you!</option>
+                    <option value="other">Something else</option>
+                </select>
+                <br>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" rows="8" cols="40">Your message here...</textarea>
+                <br>
+                <button class="submit">Submit</button>
+            </form>
+        </section>
+    </main>
     <footer>
         © 2024 Harley Johnson
     </footer>
