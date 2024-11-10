@@ -28,24 +28,24 @@
     <main>
         <section class="single">
             <h2>Contact Me</h2>
-            <form name="contact" method="post">
+            <form name="contact" id="contact-form" method="post">
                 <label for="name">Name:</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" class="item" id="name">
                 <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email">
-                <br>
+                <input type="email" name="email" class="item" id="email">
+
                 <label for="reason">Reason to contact:</label>
-                <select name="reason" id="reason">
+                <select name="reason" class="item" id="reason">
                     <option value="hello">Just saying hello!</option>
                     <option value="feedback">Site feedback</option>
                     <option value="collaboration">I want to collabsorate!</option>
                     <option value="hire">I want to hire you!</option>
                     <option value="other">Something else</option>
                 </select>
-                <br>
+
                 <label for="message">Message:</label>
-                <textarea name="message" id="message" rows="8" cols="40">Your message here...</textarea>
-                <br>
+                <textarea name="message" class="item" id="message" rows="8">Your message here...</textarea>
+
                 <button class="submit">Submit</button>
             </form>
         </section>
